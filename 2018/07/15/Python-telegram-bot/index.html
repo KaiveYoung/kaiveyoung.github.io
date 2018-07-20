@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://kaive.me">
   <title>用Python写一个简单的Telegram Bot | Kaive的技术随笔</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="引言随着国内的互联网环境越来越差,越来越多的人转移到了国外更开放安全的聊天平台,Telegram是首选,Telergam的功能强大,Sticker,Group,Channel和Bot系统让人爱不释手,今天有兴趣就用Python写了一个Todolist Bot,下面分享一下开发过程 注册bot在Telegram里找到Bot Father注册一个Bot 搭建环境Telegram如此著名,当然有和多封装">
+  <meta name="description" content="引言随着国内的互联网环境越来越差,越来越多的人转移到了国外更开放安全的聊天平台,Telegram是首选,Telergam的功能强大,Sticker,Group,Channel和Bot系统让人爱不释手,今天有兴趣就用Python写了一个Todolist Bot,下面分享一下开发过程 注册bot在Telegram里找到Bot Father注册一个Bot 搭建环境Telegram如此著名,当然有很多封装">
 <meta name="keywords" content="Python,Telegram,Bot">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用Python写一个简单的Telegram Bot">
 <meta property="og:url" content="https://kaive.me/2018/07/15/Python-telegram-bot/index.html">
 <meta property="og:site_name" content="Kaive的技术随笔">
-<meta property="og:description" content="引言随着国内的互联网环境越来越差,越来越多的人转移到了国外更开放安全的聊天平台,Telegram是首选,Telergam的功能强大,Sticker,Group,Channel和Bot系统让人爱不释手,今天有兴趣就用Python写了一个Todolist Bot,下面分享一下开发过程 注册bot在Telegram里找到Bot Father注册一个Bot 搭建环境Telegram如此著名,当然有和多封装">
+<meta property="og:description" content="引言随着国内的互联网环境越来越差,越来越多的人转移到了国外更开放安全的聊天平台,Telegram是首选,Telergam的功能强大,Sticker,Group,Channel和Bot系统让人爱不释手,今天有兴趣就用Python写了一个Todolist Bot,下面分享一下开发过程 注册bot在Telegram里找到Bot Father注册一个Bot 搭建环境Telegram如此著名,当然有很多封装">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:updated_time" content="2018-07-14T16:45:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用Python写一个简单的Telegram Bot">
-<meta name="twitter:description" content="引言随着国内的互联网环境越来越差,越来越多的人转移到了国外更开放安全的聊天平台,Telegram是首选,Telergam的功能强大,Sticker,Group,Channel和Bot系统让人爱不释手,今天有兴趣就用Python写了一个Todolist Bot,下面分享一下开发过程 注册bot在Telegram里找到Bot Father注册一个Bot 搭建环境Telegram如此著名,当然有和多封装">
+<meta name="twitter:description" content="引言随着国内的互联网环境越来越差,越来越多的人转移到了国外更开放安全的聊天平台,Telegram是首选,Telergam的功能强大,Sticker,Group,Channel和Bot系统让人爱不释手,今天有兴趣就用Python写了一个Todolist Bot,下面分享一下开发过程 注册bot在Telegram里找到Bot Father注册一个Bot 搭建环境Telegram如此著名,当然有很多封装">
   
   
     <link rel="icon" href="/favicon.png">
@@ -179,7 +179,7 @@ ga('send', 'pageview');
       
         <h4 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h4><p>随着国内的互联网环境越来越差,越来越多的人转移到了国外更开放安全的聊天平台,Telegram是首选,Telergam的功能强大,Sticker,Group,Channel和Bot系统让人爱不释手,今天有兴趣就用Python写了一个<a href="https://t.me/woodytodobot" target="_blank" rel="noopener">Todolist Bot</a>,下面分享一下开发过程</p>
 <h4 id="注册bot"><a href="#注册bot" class="headerlink" title="注册bot"></a>注册bot</h4><p>在Telegram里找到<a href="https://t.me/BotFather" target="_blank" rel="noopener">Bot Father</a>注册一个Bot</p>
-<h4 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h4><p>Telegram如此著名,当然有和多封装好的python库,我选用了<a href="https://python-telegram-bot.readthedocs.io/en/stable/" target="_blank" rel="noopener">python-telegram-bot</a></p>
+<h4 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h4><p>Telegram如此著名,当然有很多封装好的python库,我选用了<a href="https://python-telegram-bot.readthedocs.io/en/stable/" target="_blank" rel="noopener">python-telegram-bot</a></p>
 <ul>
 <li><p>安装依赖</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip installl python-telegram-bot</span><br></pre></td></tr></table></figure>
@@ -398,6 +398,14 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
@@ -407,14 +415,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">分布式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
               </li>
              
               <li class="article-tag-list-item">
