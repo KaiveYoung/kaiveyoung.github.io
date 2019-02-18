@@ -197,8 +197,6 @@ ga('send', 'pageview');
 </ol>
 <p>当然,它现在什么也做不了,只能永远说Hello world,下面我们,来扩充他</p>
         
-          <a class="article-more-a" href="/2018/07/15/Python-telegram-bot/#more">more >></a>
-        
       
 
       
@@ -335,8 +333,6 @@ ga('send', 'pageview');
 </table>
 <p>下文都以RabbitMQ为例子</p>
         
-          <a class="article-more-a" href="/2018/07/12/Celery-Based-distributed/#more">more >></a>
-        
       
 
       
@@ -425,8 +421,6 @@ ga('send', 'pageview');
 <h4 id="配置包过滤系统"><a href="#配置包过滤系统" class="headerlink" title="配置包过滤系统"></a>配置包过滤系统</h4><h6 id="配置规则"><a href="#配置规则" class="headerlink" title="配置规则"></a>配置规则</h6><p>下面的规则 ACCEPT 规则表示默认允许连接所有客户端， - 表示排除kaive和passion， DROP 规则表示默认拒绝，但是允许连接 10.2.0.0/16 网段。对于 CLIENTS 和 SUBNETS 都有 ACCEPT 与 DROP 两种规则</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[CLIENTS ACCEPT]</span><br><span class="line">-kaive</span><br><span class="line">-passion</span><br><span class="line">[SUBNETS DROP]</span><br><span class="line">+10.2.0.0/16</span><br><span class="line">[END]</span><br></pre></td></tr></table></figure>
 <p>也可以用下面这种规则，DROP 所有网段，但是允许 10.2.0.0/16 网段，但是不允许该网段内的 10.2.1.0/24 网段</p>
-        
-          <a class="article-more-a" href="/2017/08/08/Openvpn-pf/#more">more >></a>
         
       
 
@@ -530,8 +524,6 @@ ga('send', 'pageview');
 <p>客户端导入配置文件即可</p>
 <h4 id="开启NAT"><a href="#开启NAT" class="headerlink" title="开启NAT"></a>开启NAT</h4>
         
-          <a class="article-more-a" href="/2017/07/17/Openvpn/#more">more >></a>
-        
       
 
       
@@ -612,8 +604,6 @@ ga('send', 'pageview');
 <p>system实际上是fork和exec组合实现的，重点在于exec中指定了使用/bin/sh执行命令，但是Android的sh在/system/bin/sh里，所以这里会报错</p>
 <h4 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h4><p>两种方法，重新实现system函数，修改exec里的参数，或者直接使用fork和exec来调用系统命令</p>
 
-        
-          <a class="article-more-a" href="/2017/07/07/Android-C-system/#more">more >></a>
         
       
 
@@ -698,8 +688,6 @@ ga('send', 'pageview');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4</span><br><span class="line">::1         localhost localhost.localdomain localhost6 localhost6.localdomain6</span><br><span class="line">192.168.0.11 mariadb1</span><br><span class="line">192.168.0.12 mariadb2</span><br><span class="line">192.168.0.13 mariadb3</span><br></pre></td></tr></table></figure>
 <h4 id="配置数据库"><a href="#配置数据库" class="headerlink" title="配置数据库"></a>配置数据库</h4>
         
-          <a class="article-more-a" href="/2017/06/20/MariaDB/#more">more >></a>
-        
       
 
       
@@ -782,8 +770,6 @@ ga('send', 'pageview');
 <p>关闭selinux,编辑/etc/selinux/config<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># This file controls the state of SELinux on the system.</span></span><br><span class="line"><span class="comment"># SELINUX= can take one of these three values:</span></span><br><span class="line"><span class="comment">#     enforcing - SELinux security policy is enforced.</span></span><br><span class="line"><span class="comment">#     permissive - SELinux prints warnings instead of enforcing.</span></span><br><span class="line"><span class="comment">#     disabled - No SELinux policy is loaded.</span></span><br><span class="line">SELINUX=disabled</span><br><span class="line"><span class="comment"># SELINUXTYPE= can take one of three two values:</span></span><br><span class="line"><span class="comment">#     targeted - Targeted processes are protected,</span></span><br><span class="line"><span class="comment">#     minimum - Modification of targeted policy. Only selected processes are protected. </span></span><br><span class="line"><span class="comment">#     mls - Multi Level Security protection.</span></span><br><span class="line">SELINUXTYPE=targeted</span><br></pre></td></tr></table></figure></p>
 <p>保存并重启电脑</p>
 <h4 id="配置Docker"><a href="#配置Docker" class="headerlink" title="配置Docker"></a>配置Docker</h4><p>因为国内连接dockerhub不畅，也许需要配置代理或者镜像服务器，并且关闭selinux配置，编辑/etc/sysconfig/docker<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Modify these options if you want to change the way the docker daemon runs</span></span><br><span class="line">OPTIONS=<span class="string">'--selinux-enabled=false --log-driver=journald --signature-verification=false'</span></span><br><span class="line"><span class="keyword">if</span> [ -z <span class="string">"<span class="variable">$&#123;DOCKER_CERT_PATH&#125;</span>"</span> ]; <span class="keyword">then</span></span><br><span class="line">    DOCKER_CERT_PATH=/etc/docker</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># If you want to add your own registry to be used for docker search and docker</span></span><br><span class="line"><span class="comment"># pull use the ADD_REGISTRY option to list a set of registries, each prepended</span></span><br><span class="line"><span class="comment"># with --add-registry flag. The first registry added will be the first registry</span></span><br><span class="line"><span class="comment"># searched.</span></span><br><span class="line"><span class="comment">#ADD_REGISTRY='--add-registry registry.access.redhat.com'</span></span><br><span class="line">http_proxy=<span class="string">"http://192.168.0.1:8118"</span></span><br><span class="line">https_proxy=<span class="string">"http://192.168.0.1:8118"</span></span><br><span class="line"><span class="comment"># If you want to block registries from being used, uncomment the BLOCK_REGISTRY</span></span><br><span class="line"><span class="comment"># option and give it a set of registries, each prepended with --block-registry</span></span><br><span class="line"><span class="comment"># flag. For example adding docker.io will stop users from downloading images</span></span><br><span class="line"><span class="comment"># from docker.io</span></span><br><span class="line"><span class="comment"># BLOCK_REGISTRY='--block-registry'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># If you have a registry secured with https but do not have proper certs</span></span><br><span class="line"><span class="comment"># distributed, you can tell docker to not look for full authorization by</span></span><br><span class="line"><span class="comment"># adding the registry to the INSECURE_REGISTRY line and uncommenting it.</span></span><br><span class="line"><span class="comment"># INSECURE_REGISTRY='--insecure-registry'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># On an SELinux system, if you remove the --selinux-enabled option, you</span></span><br><span class="line"><span class="comment"># also need to turn on the docker_transition_unconfined boolean.</span></span><br><span class="line"><span class="comment"># setsebool -P docker_transition_unconfined 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Location used for temporary files, such as those created by</span></span><br><span class="line"><span class="comment"># docker load and build operations. Default is /var/lib/docker/tmp</span></span><br><span class="line"><span class="comment"># Can be overriden by setting the following environment variable.</span></span><br><span class="line"><span class="comment"># DOCKER_TMPDIR=/var/tmp</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Controls the /etc/cron.daily/docker-logrotate cron job status.</span></span><br><span class="line"><span class="comment"># To disable, uncomment the line below.</span></span><br><span class="line"><span class="comment"># LOGROTATE=false</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># docker-latest daemon can be used by starting the docker-latest unitfile.</span></span><br><span class="line"><span class="comment"># To use docker-latest client, uncomment below lines</span></span><br><span class="line"><span class="comment">#DOCKERBINARY=/usr/bin/docker-latest</span></span><br><span class="line"><span class="comment">#DOCKER_CONTAINERD_BINARY=/usr/bin/docker-containerd-latest</span></span><br><span class="line"><span class="comment">#DOCKER_CONTAINERD_SHIM_BINARY=/usr/bin/docker-containerd-shim-latest</span></span><br></pre></td></tr></table></figure></p>
-        
-          <a class="article-more-a" href="/2017/05/13/Kubernetes/#more">more >></a>
         
       
 
